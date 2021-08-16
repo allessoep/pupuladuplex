@@ -11,7 +11,6 @@ body {
   overflow-x: hidden;
     }
 
-
 .images {
   display: flex;
   justify-content: center;
@@ -27,11 +26,14 @@ img {
 
 h1 {
   position: absolute;
-  color: #24B557;
+  color: #B52482;
   font-size: 3vh;
-  margin-top: 90vh;
-  text-align: center;
-  width: 50vh;
+  margin-top: 18em;
+  margin-left: 15vw;
+  margin-right: 5vw;
+  text-align: right;
+  line-height: 5vh;
+
 
 
   }
