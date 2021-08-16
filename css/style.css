@@ -9,28 +9,32 @@ body {
   color: white;
   overflow-y: hidden;
   overflow-x: hidden;
-    }
+}
 
 .images {
   display: flex;
   justify-content: center;
   align-items: center;
-      }
+}
 
 img {
   position: absolute;
   width: 50vh;
   margin-top: 10vh;
+  margin-right: 5vh;
   align-self: flex-start;
-  }
+}
 
 h1 {
-   position: relative;
+  position: relative;
+  font-family: 'Space Mono', monospace;
   color: #B52482;
-  font-size: 4.5vh;
-  margin-top: 10vh;
-  margin-left: 15vw;
+  font-size: 3vh;
+  margin-top: 40vh;
+  margin-left: 5vw;
   margin-right: 5vw;
   text-align: right;
   line-height: 6vh;
-  }
+}
+
+h1:hover {}
