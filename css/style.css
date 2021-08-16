@@ -25,10 +25,10 @@ img {
   }
 
 h1 {
-  position: absolute;
+  position: relative;
   color: #B52482;
   font-size: 3vh;
-  margin-top: 18em;
+  margin-top: 10vh;
   margin-left: 15vw;
   margin-right: 5vw;
   text-align: right;
