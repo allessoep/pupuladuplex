@@ -7,13 +7,13 @@ let el = outer.querySelector('#loop');
 el.innerHTML = el.innerHTML + el.innerHTML;
 
 function repeatContent(el, till) {
-  let html = el.innerHTML;
-  let counter = 0; // prevents infinite loop
+    let html = el.innerHTML;
+    let counter = 0; // prevents infinite loop
 
-  while (el.offsetWidth < till && counter < 10) {
-    el.innerHTML += html;
-    counter += 1;
-  }
+    while (el.offsetWidth < till && counter < 100) {
+        el.innerHTML += html;
+        counter += 1;
+    }
 }
 
 

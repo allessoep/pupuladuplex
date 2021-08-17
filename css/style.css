@@ -73,25 +73,23 @@ h3 {
 }
 
 #outer {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 #outer div {
-  display: inline-block;
+    display: inline-block;
 }
 
 #loop {
-  white-space: nowrap;
-  animation: loop-anim 200s linear infinite;
+    white-space: nowrap;
+    animation: loop-anim 250s linear infinite;
 }
 
 @keyframes loop-anim {
-  0% {
-    margin-left: 0;
-  }
-
-  100% {
-    margin-left: -100%
-      /* This works because of the div between "outer" and "loop" */
-  }
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -40% /* This works because of the div between "outer" and "loop" */
+    }
 }
