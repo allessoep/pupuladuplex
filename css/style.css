@@ -21,7 +21,6 @@ img {
   position: absolute;
   width: 50vh;
   margin-top: 10vh;
-  margin-right: 5vh;
   align-self: flex-start;
   margin-bottom: 20vh;
 }
@@ -48,12 +47,11 @@ li:hover {
 
 li:active {
   color: yellow;
-  cursor: pointer;
-}
+  }
 
 h2 {
   position: absolute;
-  color: #262626;
+  color: #7E7E00;
   white-space: nowrap;
   overflow: hidden;
   -webkit-transform: rotate(-90deg);
@@ -66,10 +64,9 @@ h2 {
 }
 
 h3 {
-  position: absolute;
+  position: relative;
   padding-bottom: 50vh;
   font-size: 2vh;
-  margin-right: 5vh;
 }
 
 #outer {
