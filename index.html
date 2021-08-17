@@ -17,7 +17,13 @@
 
   <div class="images">
     <h2>
-      ORGAN HARVEST FESTIVAL
+
+      <div id="outer">
+      <!-- This div is important! It lets us specify margin-left as percentage later on. -->
+      <div>
+          <div id="loop"><div id="content">ORGAN HARVEST FESTIVAL ORGAN HARVEST FESTIVAL ORGAN HARVEST FESTIVAL ORGAN HARVEST FESTIVAL ORGAN HARVEST FESTIVAL ORGAN HARVEST FESTIVAL ORGAN HARVEST FESTIVAL ORGAN HARVEST FESTIVAL</div></div>
+      </div>
+  </div>
     </h2>
     <img src="images/layer1.png" class="draggable" alt="mummy1">
     <h1>T2<br>
@@ -30,11 +36,31 @@
       T1<br>
     </h1>
   <h3>
-    pupuladuplex
+  pupuladuplex
   </h3>
 
   </div>
 
+<script>
+let outer = document.querySelector("#outer");
+let content = outer.querySelector('#content');
+
+repeatContent(content, outer.offsetWidth);
+
+let el = outer.querySelector('#loop');
+el.innerHTML = el.innerHTML + el.innerHTML;
+
+function repeatContent(el, till) {
+    let html = el.innerHTML;
+    let counter = 0; // prevents infinite loop
+
+    while (el.offsetWidth < till && counter < 10) {
+        el.innerHTML += html;
+        counter += 1;
+    }
+}
+
+</script>
 </body>
 
 </html>
