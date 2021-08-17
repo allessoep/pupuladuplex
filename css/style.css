@@ -23,6 +23,7 @@ img {
   margin-top: 10vh;
   margin-right: 5vh;
   align-self: flex-start;
+  margin-bottom: 20vh;
 }
 
 h1 {
@@ -36,6 +37,7 @@ h1 {
   margin-right: 5vw;
   text-align: right;
   line-height: 6vh;
+  margin-bottom: 20vh;
 }
 
 h1:hover {}
@@ -51,6 +53,7 @@ h2 {
   writing-mode: lr-tb;
   padding-bottom: 30vh;
   font-size: 9vh;
+  margin-bottom: 20vh;
 }
 
 h3 {
@@ -58,4 +61,5 @@ h3 {
   padding-bottom: 30vh;
   font-size: 2vh;
   margin-right: 5vh;
+  margin-bottom: 20vh;
 }
