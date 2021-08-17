@@ -21,7 +21,7 @@ img {
   position: absolute;
   width: 50vh;
   margin-top: 10vh;
-  margin-right: 10vh;
+  margin-right: 5vh;
   align-self: flex-start;
 }
 
@@ -42,7 +42,7 @@ h1:hover {}
 
 h2 {
   position: absolute;
-  color: #6C2E1F;
+  color: #22AC53;
   white-space: nowrap;
   overflow: hidden;
   -webkit-transform: rotate(-90deg);
@@ -51,4 +51,11 @@ h2 {
   writing-mode: lr-tb;
   padding-bottom: 30vh;
   font-size: 9vh;
+}
+
+h3 {
+  position: absolute;
+  padding-bottom: 30vh;
+  font-size: 2vh;
+  margin-right: 5vh;
 }
