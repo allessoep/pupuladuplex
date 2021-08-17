@@ -30,7 +30,8 @@ h1 {
   font-family: 'Space Mono', monospace;
   color: #B52482;
   font-size: 3vh;
-  margin-top: 40vh;
+  margin-top: 25vh;
+  margin-bottom: 10vh;
   margin-left: 5vw;
   margin-right: 5vw;
   text-align: right;
@@ -38,3 +39,16 @@ h1 {
 }
 
 h1:hover {}
+
+h2 {
+  position: absolute;
+  color: #262626;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  writing-mode: lr-tb;
+  margin-right: 39vh;
+  font-size: 9vh;
+}
