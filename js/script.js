@@ -1,74 +1,91 @@
-var container = document.querySelector("#container");
-var activeItem = null;
+let outer = document.querySelector("#outer");
+let content = outer.querySelector('#content');
 
-var active = false;
+repeatContent(content, outer.offsetWidth);
 
-container.addEventListener("touchstart", dragStart, false);
-container.addEventListener("touchend", dragEnd, false);
-container.addEventListener("touchmove", drag, false);
+let el = outer.querySelector('#loop');
+el.innerHTML = el.innerHTML + el.innerHTML;
 
-container.addEventListener("mousedown", dragStart, false);
-container.addEventListener("mouseup", dragEnd, false);
-container.addEventListener("mousemove", drag, false);
+function repeatContent(el, till) {
+  let html = el.innerHTML;
+  let counter = 0; // prevents infinite loop
 
-function dragStart(e) {
-
-  if (e.target !== e.currentTarget) {
-    active = true;
-
-    // this is the item we are interacting with
-    activeItem = e.target;
-
-    if (activeItem !== null) {
-      if (!activeItem.xOffset) {
-        activeItem.xOffset = 0;
-      }
-
-      if (!activeItem.yOffset) {
-        activeItem.yOffset = 0;
-      }
-
-      if (e.type === "touchstart") {
-        activeItem.initialX = e.touches[0].clientX - activeItem.xOffset;
-        activeItem.initialY = e.touches[0].clientY - activeItem.yOffset;
-      } else {
-        console.log("doing something!");
-        activeItem.initialX = e.clientX - activeItem.xOffset;
-        activeItem.initialY = e.clientY - activeItem.yOffset;
-      }
-    }
+  while (el.offsetWidth < till && counter < 10) {
+    el.innerHTML += html;
+    counter += 1;
   }
 }
 
-function dragEnd(e) {
-  if (activeItem !== null) {
-    activeItem.initialX = activeItem.currentX;
-    activeItem.initialY = activeItem.currentY;
-  }
 
-  active = false;
-  activeItem = null;
-}
 
-function drag(e) {
-  if (active) {
-    if (e.type === "touchmove") {
-      e.preventDefault();
+//t2
+document.getElementById( "t2" ).onclick= function(){
+document.getElementById('t2sound').play();
+};
+document.getElementById( "t2" ).ontouchstart = function(){
+document.getElementById('t2sound').play();
+};
 
-      activeItem.currentX = e.touches[0].clientX - activeItem.initialX;
-      activeItem.currentY = e.touches[0].clientY - activeItem.initialY;
-    } else {
-      activeItem.currentX = e.clientX - activeItem.initialX;
-      activeItem.currentY = e.clientY - activeItem.initialY;
-    }
+//fluid attenuation
+document.getElementById( "fluid attenuation" ).onclick= function(){
+document.getElementById('fluid attenuationsound').play();
+};
+document.getElementById( "t2" ).ontouchstart = function(){
+document.getElementById('t2sound').play();
+};
 
-    activeItem.xOffset = activeItem.currentX;
-    activeItem.yOffset = activeItem.currentY;
+//diffusion tensor
+document.getElementById( "diffusion tensor" ).onclick= function(){
+document.getElementById('diffusion tensorsound').play();
+};
+document.getElementById( "diffusion tensor" ).ontouchstart = function(){
+document.getElementById('diffusion tensorsound').play();
+};
 
-    setTranslate(activeItem.currentX, activeItem.currentY, activeItem);
-  }
-}
+//gradient
+document.getElementById( "gradient" ).onclick= function(){
+document.getElementById('gradientsound').play();
+};
+document.getElementById( "gradient" ).ontouchstart = function(){
+document.getElementById('gradientsound').play();
+};
 
-function setTranslate(xPos, yPos, el) {
-  el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
-}
+//kiss
+document.getElementById( "kiss" ).onclick= function(){
+document.getElementById('kisssound').play();
+};
+document.getElementById( "kiss" ).ontouchstart = function(){
+document.getElementById('kisssound').play();
+};
+
+//rage
+document.getElementById( "rage" ).onclick= function(){
+document.getElementById('ragesound').play();
+};
+document.getElementById( "rage" ).ontouchstart = function(){
+document.getElementById('ragesound').play();
+};
+
+//BIDE
+document.getElementById( "bide" ).onclick= function(){
+document.getElementById('bidesound').play();
+};
+document.getElementById( "bide" ).ontouchstart = function(){
+document.getElementById('bidesound').play();
+};
+
+//T1
+document.getElementById( "t1" ).onclick= function(){
+document.getElementById('t1sound').play();
+};
+document.getElementById( "t1" ).ontouchstart = function(){
+document.getElementById('t1sound').play();
+};
+
+//t2
+document.getElementById( "t1" ).onclick= function(){
+document.getElementById('t1sound').play();
+};
+document.getElementById( "t1" ).ontouchstart = function(){
+document.getElementById('t1sound').play();
+};

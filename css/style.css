@@ -26,7 +26,7 @@ img {
   margin-bottom: 20vh;
 }
 
-h1 {
+ul {
   position: relative;
   font-family: 'Space Mono', monospace;
   color: #B52482;
@@ -38,9 +38,18 @@ h1 {
   text-align: right;
   line-height: 6vh;
   margin-bottom: 20vh;
+  list-style-type: none;
 }
 
-h1:hover {}
+li:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+li:active {
+  color: yellow;
+  cursor: pointer;
+}
 
 h2 {
   position: absolute;
@@ -82,7 +91,7 @@ h3 {
   }
 
   100% {
-    margin-left: -10%
+    margin-left: -100%
       /* This works because of the div between "outer" and "loop" */
   }
 }
