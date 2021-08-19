@@ -35,7 +35,7 @@ ul {
   padding-bottom: 20vw;
   text-align: right;
   line-height: 6vh;
-  margin-bottom: 80vh;
+  margin-bottom: 100vh;
   list-style-type: none;
 }
 
@@ -74,8 +74,7 @@ h3 {
   width: 30vh;
   border: 2px solid #B52482;
   overflow: auto;
-  margin-right: 10vh;
-    font-size: 2vh;
+  font-size: 2vh;
   padding: 1vh;
 }
 
