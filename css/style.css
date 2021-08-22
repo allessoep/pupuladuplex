@@ -21,7 +21,7 @@ body {
   width: 100vh;
   margin-top: 20vh;
   align-self: flex-start;
-  opacity: 10%
+  opacity: 20%
   }
 
 #bloodscreen {
@@ -32,9 +32,8 @@ body {
   }
 
 #livingroom {
-  position: absolute;
+  position: relative;
   width: 30vh;
-  margin-right: 20vh;
   margin-top: 10vh;
   margin-bottom: 20vh;
 }
@@ -43,7 +42,7 @@ body {
   position: absolute;
   width: 20vh;
   margin-top: 100vh;
-  margin-left: 20vh;
+
 
 }
 
