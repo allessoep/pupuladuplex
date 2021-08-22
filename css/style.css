@@ -22,28 +22,25 @@ body {
   margin-top: 20vh;
   align-self: flex-start;
   opacity: 20%
-  }
+}
 
 #bloodscreen {
   position: absolute;
   width: 40vh;
   margin-top: 20vh;
   align-self: flex-start;
-  }
+}
 
 #livingroom {
   position: relative;
   width: 30vh;
-  margin-top: 10vh;
   margin-bottom: 20vh;
 }
 
 #headgif {
   position: absolute;
   width: 20vh;
-  margin-top: 100vh;
-
-
+  margin-top: 80vh;
 }
 
 ul {
@@ -64,7 +61,7 @@ ul {
 ul li:hover {
   color: yellow;
   cursor: pointer;
-  }
+}
 
 li:active {
   color: yellow;
