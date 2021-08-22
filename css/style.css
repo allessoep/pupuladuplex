@@ -8,20 +8,13 @@ body {
   background-color: black;
   color: white;
   overflow-x: hidden;
+  background-image: url("background.png");
 }
 
 .content {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#background {
-  position: absolute;
-  width: 100vh;
-  margin-top: 20vh;
-  align-self: flex-start;
-  opacity: 20%
 }
 
 #bloodscreen {
@@ -49,7 +42,7 @@ ul {
   color: #B52482;
   font-size: 2vh;
   margin-bottom: 10vh;
-  margin-left: 5vw;
+
   margin-right: 5vw;
   padding-bottom: 20vw;
   text-align: right;
