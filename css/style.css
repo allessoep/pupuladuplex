@@ -10,18 +10,41 @@ body {
   overflow-x: hidden;
 }
 
-.images {
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-img {
+#background {
   position: absolute;
-  width: 50vh;
-  margin-top: 10vh;
+  width: 100vh;
+  margin-top: 20vh;
   align-self: flex-start;
+  opacity: 10%
+  }
+
+#bloodscreen {
+  position: absolute;
+  width: 40vh;
+  margin-top: 20vh;
+  align-self: flex-start;
+  }
+
+#livingroom {
+  position: absolute;
+  width: 30vh;
+  margin-right: 20vh;
+  margin-top: 10vh;
   margin-bottom: 20vh;
+}
+
+#headgif {
+  position: absolute;
+  width: 20vh;
+  margin-top: 100vh;
+  margin-left: 20vh;
+
 }
 
 ul {
@@ -39,10 +62,10 @@ ul {
   list-style-type: none;
 }
 
-li:hover {
+ul li:hover {
   color: yellow;
   cursor: pointer;
-}
+  }
 
 li:active {
   color: yellow;
@@ -64,7 +87,7 @@ h2 {
 
 h3 {
   position: relative;
-  margin-bottom: 70vh;
+  margin-bottom: 120vh;
   font-size: 2vh;
 }
 
