@@ -40,7 +40,7 @@ body {
 #headgif {
   position: absolute;
   width: 20vh;
-  margin-top: 120vh;
+  padding-top: 120vh;
 }
 
 ul {
