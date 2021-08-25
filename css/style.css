@@ -80,9 +80,9 @@ h2 {
 
 h3 {
   position: absolute;
-  margin-bottom: 120vh;
+  padding-bottom: 120vh;
   font-size: 2vh;
-  margin-right: 40vh;
+  padding-right: 40vh;
   }
 
 #scrollbox {
