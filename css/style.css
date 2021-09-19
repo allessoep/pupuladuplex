@@ -8,7 +8,9 @@ body {
   background-color: black;
   color: white;
   overflow-x: hidden;
-  background-image: url("background.png");
+  font: 9px monospace;
+  line-height: 9px;
+  background-image: "giffie.gif"
 }
 
 .content {
@@ -17,41 +19,157 @@ body {
   align-items: center;
 }
 
-#bloodscreen {
-  position: relative;
-  width: 40vh;
-  margin-top: 80vh;
-  align-self: flex-start;
-  justify-content: center;
+.txt-s100 {
+  float: left;
+  text-align: center;
+  font-size: 11px;
+  font-family: serif;
+  color: teal;
+  text-shadow: 21px 26px 5px fuchsia;
+  clear: left;
+}
+
+.txt-s99 {
+  float: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: serif;
+  color: green;
+  text-shadow: 13px 23px 6px navy;
+  clear: both;
+}
+
+.txt-s98 {
+  float: left;
+  text-align: left;
+  font-size: 26px;
+  font-family: sans-serif;
+  color: navy;
+  text-decoration: underline;
+  text-shadow: 29px 5px 8px fuchsia;
+  clear: none;
+}
+
+.txt-s97 {
+  float: left;
+  text-align: right;
+  font-size: 22px;
+  font-family: cursive;
+  color: teal;
+  text-decoration: overline;
+  text-shadow: 13px 20px 8px aqua;
+  border-left: 5px groove rgba(38, 157, 78, 0.45);
+  clear: right;
+}
+
+.txt-s96 {
+  float: left;
+  text-align: left;
+  font-size: 11px;
+  font-family: monospace;
+  color: black;
+  text-decoration: none;
+  text-shadow: 9px 20px 5px teal;
+  clear: left;
+}
+
+.txt-s95 {
+  float: none;
+  text-align: left;
+  font-size: 9px;
+  font-family: sans-serif;
+  color: teal;
+  text-decoration: blink;
+  text-shadow: 7px 25px 6px purple;
+  clear: left;
+}
+
+.txt-s94 {
+  float: left;
+  text-align: left;
+  font-size: 15px;
+  font-family: serif;
+  color: aqua;
+  opacity: 0.22;
+  text-decoration: underline;
+  text-shadow: 25px 27px 4px navy;
+  clear: none;
+  animation: anim-17 1.2s linear infinite alternate-reverse;
+}
+
+.txt-s93 {
+  float: left;
+  text-align: center;
+  font-size: 2em;
+  font-family: cursive;
+  color: navy;
+  text-decoration: blink;
+  text-shadow: 21px 19px 6px navy;
+  clear: both;
+}
+
+.txt-s92 {
+  float: left;
+  text-align: justify;
+  font-size: 17px;
+  font-family: monospace;
+  color: teal;
+  text-decoration: overline;
+  border-top: 22px solid rgba(202, 193, 151, 0.11);
+  border: 20px solid rgba(230, 124, 98, 0.16);
+  clear: both;
+}
+
+.txt-s91 {
+  float: left;
+  text-align: justify;
+  font-size: 26px;
+  font-family: monospace;
+  color: teal;
+  text-decoration: underline;
+  text-shadow: 19px 20px 6px yellow;
+  clear: right;
+}
+
+.txt-s90 {
+  float: right;
+  text-align: justify;
+  font-size: 16px;
+  font-family: cursive;
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+  clear: both;
 }
 
 #background {
   position: absolute;
-  width: 50vh;
-  align-self: flex-start;
-}
-
-#livingroom {
-  position: relative;
-  width: 30vh;
-  margin-top: 100vh;
+    width: 20vh;
 }
 
 #headgif {
   position: absolute;
   width: 20vh;
-  padding-top: 120vh;
 }
+
+#eyegif {
+  position: absolute;
+  width: 20vh;
+  transform: scale(1.5) translateY(-20px)
+}
+
 
 ul {
   position: absolute;
   font-family: 'Space Mono', monospace;
   color: #B52482;
-  font-size: 2vh;
+  text-decoration: underline;
+  text-shadow: 19px 20px 6px yellow;
+  font-size: 3vh;
   margin-left: 10vw;
   text-align: right;
   line-height: 6vh;
-  padding-bottom: 80vh;
+
   list-style-type: none;
 }
 
@@ -62,59 +180,4 @@ ul li:hover {
 
 li:active {
   color: yellow;
-}
-
-h2 {
-  position: absolute;
-  color: #7E7E00;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  writing-mode: lr-tb;
-  padding-bottom: 30vh;
-  font-size: 9vh;
-  margin-bottom: 20vh;
-}
-
-h3 {
-  position: absolute;
-  padding-bottom: 120vh;
-  font-size: 2vh;
-  padding-right: 40vh;
-  }
-
-#scrollbox {
-  position: absolute;
-  height: 30vh;
-  width: 30vh;
-  border: 2px solid #B52482;
-  overflow: auto;
-  font-size: 2vh;
-  padding: 1vh;
-  }
-
-#outer {
-  overflow: hidden;
-}
-
-#outer div {
-  display: inline-block;
-}
-
-#loop {
-  white-space: nowrap;
-  animation: loop-anim 250s linear infinite;
-}
-
-@keyframes loop-anim {
-  0% {
-    margin-left: 0;
-  }
-
-  100% {
-    margin-left: -40%
-      /* This works because of the div between "outer" and "loop" */
-  }
 }
