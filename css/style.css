@@ -10,6 +10,14 @@ body {
   overflow-x: hidden;
   font: 9px monospace;
   line-height: 9px;
+
+}
+
+@media (min-width: 1350px){
+    body {
+      margin-right: 50em;
+      margin-left: 50em;
+    }
 }
 
 h2 {
@@ -18,20 +26,28 @@ h2 {
   margin-left: 17vw;
 }
 
+
 #background {
   position: absolute;
   width: 20vh;
 }
 
 #headgif {
-  position: absolute;
   width: 20vh;
+  position: absolute;
 }
 
 #eyegif {
   position: absolute;
   width: 20vh;
+  opacity: 0.8;
 }
+
+#mriheadgif {
+  position: absolute;
+  width: 30vh;
+  opacity: 0.6;
+  }
 
 #button {
   position: absolute;
@@ -182,7 +198,7 @@ h2 {
 
 ul {
   position: absolute;
-  color: #B52482;
+  color: yellow;
   text-decoration: underline;
   text-shadow: 19px 20px 6px yellow;
   font-weight: 1000;
@@ -191,15 +207,20 @@ ul {
   text-align: right;
   line-height: 6vh;
   list-style-type: none;
+  -webkit-filter: drop-shadow(0 0 30px rgb(255, 196, 0)) drop-shadow(10px 5px 5px #000);
+  filter: drop-shadow(0 0 30px rgb(255, 196, 0)) drop-shadow(10px 5px 5px #000);
   }
 
 
 ul li:hover {
-  color: green;
+  color: #B52482;
+  text-shadow: 19px 20px 6px #B52482;
+  text-decoration: underline;
   cursor: pointer;
-  background-color: blue transparent;
+
 }
 
 li:active {
-  color: yellow;
+  color: #B52482;
+
 }
