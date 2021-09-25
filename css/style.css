@@ -32,7 +32,7 @@ div.layer>span, div.layer>img {
   pointer-events: none
 }
 
-div#layer-1 {
+div#layer-5 {
   position: absolute;
   left: 30px;
   top: 10px;
@@ -41,7 +41,7 @@ div#layer-1 {
   pointer-events: none
 }
 
-div#layer-2 {
+div#layer-4 {
   z-index: 4;
   transform: translateZ(0)
 }
@@ -51,12 +51,12 @@ div#layer-3 {
   transform: translateZ(-0.1px) scale(1.1)
 }
 
-div#layer-4 {
+div#layer-2 {
   z-index: 2;
   transform: translateZ(-0.2px) scale(1.2)
 }
 
-div#layer-5 {
+div#layer-1 {
   z-index: 1;
   transform: translateZ(-0.3px) scale(1.3)
 }
