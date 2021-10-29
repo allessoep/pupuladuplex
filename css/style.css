@@ -2,12 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box
-
 }
 
 body {
-   background-color: black;
-
+  background-color: black;
 }
 
 div.container {
@@ -17,8 +15,6 @@ div.container {
   overflow-x: hidden;
   overflow-y: auto;
   perspective-origin: 100% initial;
-  border-left: 22px groove rgba(167, 55, 139, 0.63);
-
 }
 
 div.layer {
@@ -34,7 +30,6 @@ div.layer {
 
 div.layer>span, div.layer>img {
   pointer-events: none
-
 }
 
 div#layer-5 {
@@ -43,7 +38,7 @@ div#layer-5 {
   width: 400px;
   z-index: 5;
   pointer-events: none
-  }
+}
 
 div#layer-4 {
   z-index: 4;
