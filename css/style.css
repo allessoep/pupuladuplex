@@ -25,9 +25,8 @@ div.container2 {
   overflow-x: hidden;
   overflow-y: auto;
   perspective-origin: 100% initial;
-  background: rgb(255,255,255);
-
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
+ background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 
