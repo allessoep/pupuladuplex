@@ -56,22 +56,24 @@ div.layer>span, div.layer>img {
   text-shadow: 0 0 3px white;
   font-style: italic;
   clear: right;
+
 }
 
  .pricetext{
    float: right;
-   text-align: right;
+   text-align: left;
    font-size: 4vh;
    font-family: sans-serif;
-   color: transparent;
-   text-shadow: 0 0 3px blue;
+   color: blue;
+   text-shadow: 0 0 5px blue;
    font-style: italic;
    clear: right;
+   margin: 0;
   }
 
 .blacktext{
   float: right;
-  text-align: right;
+  text-align: left;
   font-size: 3vh;
   font-family: sans-serif;
   text-decoration: blink;
