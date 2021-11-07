@@ -20,7 +20,7 @@ div.container {
 
 div.container2 {
   perspective: 1px;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   height: 60vh;
   overflow-x: hidden;
@@ -28,6 +28,7 @@ div.container2 {
   perspective-origin: 100% initial;
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
 }
 
 div.layer {
@@ -43,6 +44,41 @@ div.layer {
 
 div.layer>span, div.layer>img {
   pointer-events: none
+}
+
+
+.whitetext{
+  float: right;
+  text-align: right;
+  font-size: 3vh;
+  font-family: sans-serif;
+  color: transparent;
+  text-shadow: 0 0 0.1em white;
+  font-style: italic;
+  clear: right;
+}
+
+ .pricetext{
+    float: right;
+    text-align: right;
+    font-size: 3.5vh;
+    font-family: sans-serif;
+    color: black;
+    text-shadow: 13px 25px 4px white;
+    clear: both;
+  }
+
+.blacktext{
+  float: right;
+  text-align: right;
+  font-size: 3vh;
+  font-family: sans-serif;
+  text-decoration: blink;
+  color: transparent;
+  text-shadow: 0 0 3px black;
+  clear: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 div#layer-5 {
