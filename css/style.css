@@ -53,19 +53,20 @@ div.layer>span, div.layer>img {
   font-size: 3vh;
   font-family: sans-serif;
   color: transparent;
-  text-shadow: 0 0 0.1em white;
+  text-shadow: 0 0 3px white;
   font-style: italic;
   clear: right;
 }
 
  .pricetext{
-    float: right;
-    text-align: right;
-    font-size: 3.5vh;
-    font-family: sans-serif;
-    color: black;
-    text-shadow: 13px 25px 4px white;
-    clear: both;
+   float: right;
+   text-align: right;
+   font-size: 3vh;
+   font-family: sans-serif;
+   color: transparent;
+   text-shadow: 0 0 3px blue;
+   font-style: italic;
+   clear: right;
   }
 
 .blacktext{
