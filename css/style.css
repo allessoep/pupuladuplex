@@ -32,7 +32,7 @@ div.fadecontainer {
 div.picturegallery {
   float: right;
   perspective: 1px;
-  width: 48vh;
+  width: 100vw;
   height: 32vh;
   overflow-x: scroll;
   overflow-y: hidden;
