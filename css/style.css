@@ -8,7 +8,7 @@ body {
   overflow: hidden;
 }
 
-div.container {
+div.madcontainer {
   perspective: 1px;
   height: 40vh;
   width: 100%;
@@ -18,9 +18,8 @@ div.container {
   background-color: black;
 }
 
-div.container2 {
+div.fadecontainer {
   perspective: 1px;
-  padding: 20px;
   width: 100%;
   height: 60vh;
   overflow-x: hidden;
@@ -28,7 +27,24 @@ div.container2 {
   perspective-origin: 100% initial;
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
 
+div.picturegallery {
+  float: right;
+  perspective: 1px;
+  width: 48vh;
+  height: 32vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  perspective-origin: 100% initial;
+  white-space: nowrap;
+  clear: right;
+  font-size: 0;
+}
+
+div.picturegallery img {
+  width: 48vh;
+  height: 32vh;
 }
 
 div.layer {
@@ -46,42 +62,40 @@ div.layer>span, div.layer>img {
   pointer-events: none
 }
 
-
-.whitetext{
+.whitetext {
   float: right;
   text-align: right;
   font-size: 3vh;
   font-family: sans-serif;
   color: transparent;
-  text-shadow: 0 0 3px white;
+  text-shadow: 0 0 2px white;
   font-style: italic;
   clear: right;
-
+  margin: 20px;
 }
 
- .pricetext{
-   float: right;
-   text-align: left;
-   font-size: 4vh;
-   font-family: sans-serif;
-   color: blue;
-   text-shadow: 0 0 5px blue;
-   font-style: italic;
-   clear: right;
-   margin: 0;
-  }
+.pricetext {
+  float: right;
+  text-align: right;
+  font-size: 4vh;
+  font-family: sans-serif;
+  color: transparent;
+  text-shadow: 0 0 2px blue;
+  font-style: italic;
+  clear: right;
+  margin: 20px;
+}
 
-.blacktext{
+.blacktext {
   float: right;
   text-align: left;
   font-size: 3vh;
   font-family: sans-serif;
   text-decoration: blink;
   color: transparent;
-  text-shadow: 0 0 3px black;
-  clear: left;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  text-shadow: 0 0 2px black;
+  clear: right;
+  margin: 20px;
 }
 
 a {
