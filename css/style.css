@@ -44,7 +44,7 @@ div.picturegallery {
 
 div.picturegallery img {
   width: 48vh;
-  height: 32vh;
+  height: 33.33333333333333333vh;
 }
 
 div.layer {
@@ -88,7 +88,7 @@ div.layer>span, div.layer>img {
 
 .blacktext {
   float: right;
-  text-align: left;
+  text-align: right;
   font-size: 3vh;
   font-family: sans-serif;
   text-decoration: blink;
