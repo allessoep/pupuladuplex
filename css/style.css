@@ -63,6 +63,40 @@ div.layer>span, div.layer>img {
   pointer-events: none
 }
 
+.openingtext {
+  float: left;
+  text-align: left;
+  font-size: 2vh;
+  font-family: sans-serif;
+  color: transparent;
+  text-shadow: 0 0 2px white;
+  font-style: italic;
+  clear: left;
+
+}
+
+.openingtext button {
+  float: right;
+  text-align: right;
+  font-size: 2vh;
+  font-family: sans-serif;
+  color: transparent;
+  text-shadow: 0 0 2px white;
+  font-style: italic;
+  clear: left;
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  padding-right: 15px;
+  margin: 5px;
+  text-decoration: underline;
+}
+
+
 .whitetext {
   float: right;
   text-align: right;
@@ -73,9 +107,11 @@ div.layer>span, div.layer>img {
   font-style: italic;
   clear: right;
   margin: 20px;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
-.pricetext {
+.whitetext u {
   float: right;
   text-align: right;
   font-size: 4vh;
@@ -85,20 +121,25 @@ div.layer>span, div.layer>img {
   font-style: italic;
   clear: right;
   margin: 20px;
+  text-decoration: none;
 }
 
 .blacktext {
   float: right;
   text-align: right;
-  font-size: 3vh;
+  font-size: 2.5vh;
   font-family: sans-serif;
   text-decoration: blink;
   color: transparent;
   text-shadow: 0 0 2px black;
   clear: right;
   margin: 20px;
+  margin-bottom: 100px;
 }
 
+.blacktext img {
+  width: 34.5vh;
+}
 a {
   color: inherit;
   text-decoration: underline;
