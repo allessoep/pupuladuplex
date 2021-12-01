@@ -125,12 +125,13 @@ div.layer>span, div.layer>img {
   text-shadow: 0 0 2px white;
   font-style: italic;
   clear: right;
-    margin-top: 150px;
+  margin-top: 150px;
   margin-bottom: 100px;
 }
 
 .whitetext p {
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .whitetext u {
@@ -150,7 +151,7 @@ div.layer>span, div.layer>img {
 .blacktext {
   float: right;
   text-align: right;
-  font-size: 2.5vh;
+  font-size: 3vh;
   font-family: sans-serif;
   text-decoration: blink;
   color: transparent;
@@ -158,6 +159,7 @@ div.layer>span, div.layer>img {
   clear: right;
   margin-bottom: 100px;
   margin-top: 150px;
+  margin-right: 20px;
 }
 
 .blacktext img {
