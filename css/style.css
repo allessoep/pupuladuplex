@@ -40,13 +40,32 @@ div.picturegallery {
   white-space: nowrap;
   clear: right;
   font-size: 0;
-  background-color: black;
 }
 
 div.picturegallery img {
   width: 48vh;
   height: 33.33333333333333333vh;
 }
+
+div.picturegallery2 {
+  float: right;
+  perspective: 1px;
+  width: 100vw;
+  height: 33.333333333333333vh;
+  overflow-y: hidden;
+  perspective-origin: 100% initial;
+  white-space: nowrap;
+  clear: right;
+  font-size: 0;
+  padding-left: 30px;
+}
+
+
+div.picturegallery2 img {
+  width: 35vh;
+  height: 33.33333333333333333vh;
+}
+
 
 div.layer {
   position: absolute;
@@ -106,9 +125,12 @@ div.layer>span, div.layer>img {
   text-shadow: 0 0 2px white;
   font-style: italic;
   clear: right;
-  margin: 20px;
-  margin-top: 150px;
+    margin-top: 150px;
   margin-bottom: 100px;
+}
+
+.whitetext p {
+  margin-right: 20px;
 }
 
 .whitetext u {
@@ -120,7 +142,8 @@ div.layer>span, div.layer>img {
   text-shadow: 0 0 2px blue;
   font-style: italic;
   clear: right;
-  margin: 20px;
+  margin-right: 20px;
+  margin-bottom: 150px;
   text-decoration: none;
 }
 
@@ -133,8 +156,8 @@ div.layer>span, div.layer>img {
   color: transparent;
   text-shadow: 0 0 2px black;
   clear: right;
-  margin: 20px;
   margin-bottom: 100px;
+  margin-top: 150px;
 }
 
 .blacktext img {
