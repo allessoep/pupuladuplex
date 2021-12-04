@@ -1,3 +1,16 @@
+@media only screen and (max-width : 480px) {
+  div.picturegallery2 {
+      width: 100vw;
+  }
+}
+
+@media only screen and (min-width : 481px) {
+  div.picturegallery2 {
+      width: 58vw;
+  }
+  }
+
+
 * {
   margin: 0;
   padding: 0;
@@ -50,14 +63,12 @@ div.picturegallery img {
 div.picturegallery2 {
   float: right;
   perspective: 1px;
-  width: 100vw;
-  height: 33.333333333333333vh;
+    height: 33.333333333333333vh;
   overflow-y: hidden;
   perspective-origin: 100% initial;
   white-space: nowrap;
   clear: right;
   font-size: 0;
-  padding-left: 30px;
 }
 
 
