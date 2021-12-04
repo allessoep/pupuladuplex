@@ -20,18 +20,17 @@
         setTimeout("animateTitle()", 200);
     }
     var message = [
-        "pupuladuplex`0^^^^^~ ░░░",
-        "pupuladuplex`00^^^^~ ░░░",
-        "pupuladuplex`000^^^~ ░░░",
-        "pupuladuplex`0000^^~ ░░░",
-        "pupuladuplex`00000^~ ░░░",
-        "pupuladuplex`000000~ ░░░",
-        "pupuladuplex`00000^~ ░░░",
-        "pupuladuplex`0000^^~ ░░░",
-        "pupuladuplex`000^^^~ ░░░",
-        "pupuladuplex`00^^^^~ ░░░",
-        "pupuladuplex`0^^^^^~ ░░░",
-      ],
+        "PUPULAduplex`●^^^^^~ █░░",
+        "pupulaDUPLEX`●●^^^^~ █░░",
+        "PUPULAduplex`●●●^^^~ ░█░",
+        "pupulaDUPLEX`●●●●^^~ ░░█",
+        "PUPULAduplex`●●●●●^~ ░█░",
+        "pupulaDUPLEX`●●^^^^~ █░░",
+        "PUPULAduplex`●●●^^^~ ░█░",
+        "pupulaDUPLEX`●●●●^^~ ░░█",
+        "PUPULAduplex`●●●^^^~ ░█░",
+        "pupulaDUPLEX`●●^^^^~ █░░",
+            ],
       i = 0;
     animateTitle();
   </script>
@@ -2325,7 +2324,7 @@
         <br>
         Minute-by-minute, the bodies are carried down from the prison balconies to waiting trucks and then, somehow, ferried to Mount Vesuvius.</span>
       <span class="txt-s31"><br>
-        ████◣◥█████▇▆◣ 　　　◢███████◣▀■█■███▅ 　　◢█████■〓▀▀　 　 　 ◥███▌ 　　████■▓▀　　　
+        ████◣◥█████▇▆◣ 　　　◢███████◣▀■█■███▅ 　　◢█████■〓▀▀　 　 　 ◥███▌ 　　▌███■▓▀　
         　 　 　 　◥██▊ 　 █████▊▓ 　 　 　　　　　▂◢◣██▊ 　██████ ▓▓▂▅▅▃▂ 　▀ ▂　 ██▌
         ▐█████▉▓▓▀　 ▂　▓　　◢◣▀◤ ██▍ ■█████▋▓　 ◥◣▀▀ ▓◣　　　　　█▊ ████████▓ 　 　 　▓▓　◥◣ 　
         　■ ■██████▓▓ 　 　 　▓◣◥▍ 　 　 ▐◤ ▐███████▓▓ 　 　 　▂▃▅▅◤ 　 ▎　
@@ -2420,24 +2419,24 @@
   <div class="fadecontainer">
     <span class="openingtext">
       <audio id="myAudio" src="audio/testaudio.mp3" preload="auto"></audio>
-      <audio id="myAudio">
-      <source src="audio/testaudio.mp3" type="audio/mpeg">
 
-      </audio>
-
-      <p><button onclick="pauseAudio()" ontouch="pauseAudio()" type="button">music mute</button>
-      <button onclick="playAudio()" ontouch="playAudio()" type="button">music play</button></p><br>
+      <p><button id="muteAudio" type="button">music mute</button>
+      <button id="playAudio" type="button" >music play</button></p><br>
 
       <script>
-        var x = document.getElementById("myAudio");
+      document.getElementById( "playAudio" ).onclick= function(){
+      document.getElementById('myAudio').play();
+      };
+      document.getElementById( "playAudio" ).ontouchstart = function(){
+      document.getElementById('myAudio').play();
+      };
 
-        function playAudio() {
-          x.play();
-        }
-
-        function pauseAudio() {
-          x.pause();
-        }
+      document.getElementById( "muteAudio" ).onclick= function(){
+      document.getElementById('myAudio').pause();
+      };
+      document.getElementById( "muteAudio" ).ontouchstart = function(){
+      document.getElementById('myAudio').pause();
+      };
       </script>
 
 
