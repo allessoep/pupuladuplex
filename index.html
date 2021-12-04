@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <title>pupuladuplex</title>
   <link rel="shortcut icon" href="images/favicongif.gif" />
-  <meta name="description" content="The official pupuladuplex website.">
+  <meta name="description" content="The landing page for the official pupuladuplex website. When you looked at the visual overload don't forget to exit through the gift shop.">
 
   <script>
     function animateTitle() {
@@ -2419,12 +2419,14 @@
 
   <div class="fadecontainer">
     <span class="openingtext">
-
+      <audio id="myAudio" src="audio/testaudio.mp3" preload="auto"></audio>
       <audio id="myAudio">
       <source src="audio/testaudio.mp3" type="audio/mpeg">
-      </audio>
-      <p><button onclick="pauseAudio()" ontouch="pauseAudio()" type="button">music mute</button><button onclick="playAudio()" ontouch="playAudio()" type="button">music play</button></p><br>
 
+      </audio>
+
+      <p><button onclick="pauseAudio()" ontouch="pauseAudio()" type="button">music mute</button>
+      <button onclick="playAudio()" ontouch="playAudio()" type="button">music play</button></p><br>
 
       <script>
         var x = document.getElementById("myAudio");
